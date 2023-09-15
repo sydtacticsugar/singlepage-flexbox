@@ -4,6 +4,13 @@ body {}
     background-color:#eee;
 }
 
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+}
+
 .page {
     height: auto;
     min-height:100vh;
