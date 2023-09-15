@@ -17,7 +17,7 @@ body {
     z-index: 10;
 }
 
-#navbar nav {
+#navbar nav, .row {
     display: flex;
 }
 
@@ -68,6 +68,27 @@ body {
     font-size: 2em;
 }
 
+.col {
+    flex: 1;
+    border: 1px solid #3c3c3c;
+    padding: 10px;
+}
+
+.main {
+    background-color: white;
+    min-height: 60vh;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.page > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    font-size: 3em;
+}
+
 @media all and (max-width:640px){
     #navbar nav a {
         font-size: 1.2em;
@@ -77,5 +98,9 @@ body {
 
     #navbar {
         height: 30px;
+    }
+
+    .row {
+        flex-direction: column;
     }
 }
