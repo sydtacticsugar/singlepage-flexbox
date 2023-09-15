@@ -7,6 +7,7 @@
     <title>Yes Flex Zone</title>
 </head>
 <body>
+<!-- NAVBAR -->
     <div id="navbar">
         <nav>
             <a href="#home" class="active">Home</a>
@@ -15,13 +16,18 @@
             <a href="#contact">Contact</a>
         </nav>        
     </div>
+<!-- CONTENT -->
     <div id="wrapper">
+
+<!-- HOME SECTION -->
         <div id="home" class="page">
             <div class="jumbotron">
                 <h2>Hey there</h2>
                 <h3>Lorem ipsum dolor sit.</h3>
             </div>
         </div>
+
+<!-- ABOUT SECTION -->
         <div id="about" class="page">
             <h2>About</h2>
             <div class="row">
@@ -36,6 +42,8 @@
                 </div>
             </div>
         </div>
+
+<!-- PROJECTS SECTION-->
         <div id="projects" class="page">
             <h2>Projects</h2>
             <div class="row cards">
@@ -89,9 +97,34 @@
                 </div>
             </div>
         </div>
+
+<!-- CONTACT SECTION -->
         <div id="contact" class="page">
             <h2>Contact</h2>
+            <form action="" class="myForm">
+                <div class="row rowForm">
+                    <div class="name">
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" name="name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input id="email" type="text" name="email">
+                    </div>
+                </div>
+                <div class="subject">
+                    <label for="subject">Subject:</label>
+                    <input id="subject" type="text" name="subject">
+                </div>
+                <div class="message">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
+
+<!-- FOOTER -->
         <footer>
             <p>Copyright &#169;2023 SydtacticSugar</p>
         </footer>
