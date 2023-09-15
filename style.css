@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, Verdana, sans-serif;
     color: #222;
@@ -87,6 +90,44 @@ body {
     border-bottom: 2px solid black;
     padding: 8px;
     font-size: 3em;
+}
+
+.cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    flex: 0 0 30%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card .output {
+    padding: 0 0 20px;
+}
+
+.card .output > button {
+    background-color: darkgray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
 }
 
 @media all and (max-width:640px){
