@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Syne:wght@400;700;800&display=swap');
 * {
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #222;
 }
 
@@ -36,8 +37,8 @@ body {
 }
 
 #navbar nav a:hover {
-    background-color: black;
-    color: white;
+    background-color: #222;
+    color: #fff;
 }
 
 #home {
@@ -53,27 +54,30 @@ body {
 }
 
 .jumbotron {
-    width: 80;
+    width: 80%;
     margin: 0 auto;
     border: 5px solid white;
     text-align: center;
     border-radius: 10px;
     padding: 20px;
     background-color: rgba(255,255,255,0.5);
+    margin-top: 10%;
 }
 
 .jumbotron h2 {
     font-size: 3em;
-    color: #000;
+    color: #111;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
-.jumbotron h3 {
+.jumbotron p {
     font-size: 2em;
 }
 
 .col {
     flex: 1;
-    border: 1px solid #3c3c3c;
     padding: 10px;
 }
 
@@ -81,6 +85,19 @@ body {
     background-color: white;
     min-height: 60vh;
     padding: 10px;
+    font-size: 1.2em;
+}
+
+.main > p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.main > h3 {
+    text-align: center;
+    text-transform: lowercase;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
     font-size: 1.2em;
 }
 
@@ -108,6 +125,8 @@ body {
 
 .card img {
     max-width: 100%;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .card h3 {
@@ -119,15 +138,33 @@ body {
 }
 
 .card .output {
-    padding: 0 0 20px;
+    padding: 10px 20px;
 }
 
 .card .output > button {
-    background-color: darkgray;
     border: 0;
-    color: white;
+    border-radius: 5px;
+    color: #222;
     padding: 10px;
+    margin: 10px 0;
     width: 100%;
+}
+
+.card .output > button:hover {
+    background-color: #222;
+    color: #fff;
+}
+.card .output > button:active {
+    transform: translateY(4px);    
+}
+
+button {
+    background-color: #d1d1d1;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .myForm {
@@ -138,20 +175,25 @@ body {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-    padding: 10px;
-    background-color: rgba(0,0,0,0.5);
+    padding: 10px 0;
+    background-color: #333;
+    
 }
 
 #name, #email, #subject {
     width: 100%;
     height: 50px;
     font-size: 1.5em;
+    border-radius: 5px;
+    border: 2px solid #e7e7e7;
 }
 
 
 #message {
     width: 100%;
     font-size: 1.5em;
+    border-radius: 5px;
+    border: 2px solid #e7e7e7;
 }
 
 .myForm .subject, .myForm .message {
@@ -162,8 +204,10 @@ body {
 .myForm label {
     display: block;
     padding: 0;
-    margin: 0;
-    color: white;
+    margin: 8px 0;
+    color: #eee;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .rowForm {
@@ -182,8 +226,24 @@ body {
 .myForm button {
     height: 50px;
     width: 100%;
-    background-color: palegoldenrod;
-    font-size: 1.75em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+button[type="submit"]:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.footer {
+    text-align: center;
+    color: #222;
+    font-size: 1em;
+    padding: 20px;
 }
 
 @media all and (max-width:640px){
