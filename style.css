@@ -41,8 +41,13 @@ body {
     color: #fff;
 }
 
+.active {
+    font-weight: 600;
+    border-bottom:5px solid #222;
+}
+
 #home {
-    background-image: url('https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68');
+    background-image: url('https://fastly.picsum.photos/id/10/2500/1667.jpg?grayscale&hmac=ZNPgJVQ7gpemNPKXU3ZyX9uORwOMIr3Mbnb1l2wljxg');
     background-size: cover;
 }
 
@@ -55,13 +60,12 @@ body {
 
 .jumbotron {
     width: 80%;
-    margin: 0 auto;
+    margin: 20% auto;
     border: 5px solid white;
     text-align: center;
     border-radius: 10px;
     padding: 20px;
     background-color: rgba(255,255,255,0.5);
-    margin-top: 10%;
 }
 
 .jumbotron h2 {
